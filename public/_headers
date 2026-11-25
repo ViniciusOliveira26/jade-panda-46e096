@@ -1,0 +1,14 @@
+# Security headers for the published site. This file is copied into dist/ by the build, so it only
+# applies to deploys (local `netlify dev` uses Vite's dev server, which needs inline scripts).
+# img-src allows https: images for the student's account photo (e.g. Google login).
+# Since Etapa 2 all JavaScript is bundled into hashed files: inline scripts are not allowed.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; media-src 'self' blob: data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: microphone=(self), camera=(), geolocation=(), payment=()
+
+# Hashed build files never change: cache them for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

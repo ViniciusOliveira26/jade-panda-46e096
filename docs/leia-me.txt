@@ -1,0 +1,34 @@
+ENGLISH LEARNING — NATIVE SPEAKERS
+==============================================
+
+COMO PUBLICAR
+
+O site usa login de alunos (Netlify Identity), banco de dados (Netlify Database) e uma
+função de servidor (/api/progress). Por isso ele precisa ser publicado pelo repositório Git,
+com etapa de build. O Netlify Drop (arrastar a pasta) NÃO funciona mais com esta versão.
+
+1. Faça as alterações no repositório Git do projeto.
+2. Cada envio para a branch "main" gera um novo deploy automático no Netlify.
+3. Alterações em outras branches ou Pull Requests geram uma "Deploy Preview" (site de
+   teste com banco de dados separado), sem afetar os alunos.
+4. Para voltar a uma versão anterior, abra o painel do Netlify > Deploys, escolha o deploy
+   desejado e clique em "Publish deploy".
+
+Backup e versionamento: veja docs/BACKUP-E-VERSIONAMENTO.md. Estrutura do código: docs/ESTRUTURA.md.
+O site é um app React + TypeScript; o Netlify roda "npm run build" e publica a pasta "dist".
+
+COMO USAR
+- Abra o site pelo endereço publicado.
+- Escolha uma das dez unidades.
+- Estude os tópicos, pratique questões, use os flashcards e ouça os diálogos.
+- Faça o simulado geral. A revisão dos erros fica salva em "Meu progresso".
+- Crie sua conta de aluno (nome, e-mail e senha com pelo menos 8 caracteres) e confirme o e-mail recebido.
+- Entre com e-mail e senha. O progresso fica salvo na sua conta e aparece em qualquer dispositivo.
+
+IMPORTANTE
+- O site usa Netlify Identity para o cadastro/login dos alunos e Netlify Database para salvar o progresso.
+- Ao sair da conta, os dados do aluno são apagados do aparelho (o progresso continua salvo na conta).
+- Os alunos cadastrados aparecem no painel do Netlify, em Identity.
+- Os exercícios e diálogos são originais, elaborados a partir dos objetivos e tópicos visíveis no sumário
+  fornecido. Não são cópias dos exercícios, textos ou áudios protegidos da Pearson.
+- Os áudios usam a função de voz do navegador/dispositivo; as vozes disponíveis podem variar.

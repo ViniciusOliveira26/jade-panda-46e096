@@ -1,0 +1,20 @@
+/* Design tokens — Native Speakers 2.0.
+   Navy = brand, vibrant blue = actions, white = base, light gray = secondary areas,
+   green = completed, orange = challenges and notifications. */
+:root{
+  --navy-900:#0a1b33;--navy-800:#0e2546;--navy:#13315c;--navy-600:#1d4377;
+  --blue:#1a5fe0;--blue-700:#154bb5;--blue-100:#e8f0fe;--blue-50:#f3f7ff;
+  --white:#fff;--gray-50:#f6f8fb;--gray-100:#eef2f7;--gray-200:#e2e8f0;--gray-300:#cbd5e1;
+  --text:#0f1e33;--muted:#5a6a80;
+  --green:#15803d;--green-500:#22a55b;--green-100:#e7f6ec;
+  --orange:#c2540a;--orange-500:#f27a1a;--orange-100:#fff1e5;
+  --red:#c62828;--red-100:#fdecec;
+  /* aliases kept for existing components */
+  --bg:var(--gray-50);--card:var(--white);--line:var(--gray-200);--accent:var(--blue);--soft:var(--blue-100);
+  --radius-sm:8px;--radius:12px;--radius-lg:18px;
+  --shadow-sm:0 1px 2px rgba(15,30,51,.06);
+  --shadow:0 1px 3px rgba(15,30,51,.06),0 6px 18px rgba(15,30,51,.06);
+  --shadow-lg:0 18px 48px rgba(10,27,51,.18);
+  --focus:0 0 0 3px rgba(26,95,224,.35);
+  --topbar-h:64px;--sidebar-w:248px;
+}
